@@ -41,6 +41,7 @@ h1 {
   font-size: 64px;
   line-height: 1;
   padding-bottom: 16px;
+  padding-top: 64px;
 }
 h2 {
   font-size: 48px;
@@ -54,8 +55,8 @@ h1, h2 {
 
 job {
   padding: 8px 16px;
-  background-color: #DBEAF7;
-  color: #1070CA;
+  background-color: #F1FAF5;
+  color: #47B881;
   font-family: 'Public Sans', sans-serif;
   font-size: 24px;
   border-radius: 4px;
@@ -91,6 +92,33 @@ h3 {
   border-bottom: none;
 }
 
+/* Navigation
+------------------------------------*/
+
+nav {
+  width: 100%;
+  position: fixed;
+}
+
+.navigation {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border-bottom: 1px solid #E4E7EB;
+  padding: 24px 32px;
+}
+
+nav a{
+  text-decoration: none;
+  padding: 14px 18px;
+  color: #343434;
+}
+
+nav a:hover{
+  background-color: #DBEAF7;
+  color: #1070CA;
+  border-radius: 100px;
+}
+
 
 /* Profile
 ------------------------------------*/
@@ -99,6 +127,38 @@ header {
   color: #343434;
 }
 
+header .btn {
+  color: white;
+  background-image: linear-gradient(0deg, #116AB8 0%, #0788DE 100%);
+  box-shadow: inset 0 -1px 1px 0 rgba(67,90,111,0.20), inset 0 0 0 1px rgba(0,34,66,0.20);
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 16px;
+}
+header .btn:hover {
+  background-image: linear-gradient(rgb(6, 121, 197), rgb(15, 93, 161));
+}
+header .btn:focus {
+  background-image: linear-gradient(#116AB8, #116AB8);
+}
+
+header .btn-secondary {
+  border: 1px solid #DBEAF7;
+  color: #1070CA;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 16px;
+}
+
+header .btn-secondary:hover {
+  background-color: #DBEAF7;
+}
 
 /* Projects
 ------------------------------------*/
@@ -142,12 +202,17 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  margin: 24px 24px;
+  margin: 0px 24px;
   background: #FAE2E2;
   border-radius: 16px;
 }
 
-.work-experience h2, h3 {
+.work-experience h2{
+  color: #BF0E08;
+  padding-top: 64px;
+}
+
+.work-experience h3 {
   color: #BF0E08;
   margin-top: 0px;
 }
@@ -162,8 +227,7 @@ header {
   background-position: top right;
   padding-bottom: 100px;
   border-radius: 16px;
-  margin: 0 24px;
-  margin-bottom: 24px;
+  margin: 24px 24px;
 }
 
 @media only screen and (max-width: 900px) {
